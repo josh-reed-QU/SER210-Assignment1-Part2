@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gameScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username: "
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="62dp"></Space>
+
+    <TextView
+        android:id="@+id/turn_tracker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Turn"
+        android:textSize="20dp"
+        android:gravity="center">
+    </TextView>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gameBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:padding="10dp"
+        app:rowCount="6"
+        app:columnCount="6">
+
+        <ImageButton
+            android:id="@+id/buttonOne"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="0"
+            app:layout_column="0">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTwo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="0"
+            app:layout_column="1">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonThree"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="0"
+            app:layout_column="2">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonFour"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="0"
+            app:layout_column="3">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonFive"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="0"
+            app:layout_column="4">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonSix"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="0"
+            app:layout_column="5">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonSeven"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="1"
+            app:layout_column="0">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonEight"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="1"
+            app:layout_column="1">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonNine"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="1"
+            app:layout_column="2">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="1"
+            app:layout_column="3">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonEleven"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="1"
+            app:layout_column="4">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTwelve"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="1"
+            app:layout_column="5">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonThirteen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="2"
+            app:layout_column="0">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonFourteen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="2"
+            app:layout_column="1">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonFifteen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="2"
+            app:layout_column="2">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonSixteen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="2"
+            app:layout_column="3">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonSeventeen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="2"
+            app:layout_column="4">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonEighteen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="2"
+            app:layout_column="5">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonNineteen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="3"
+            app:layout_column="0">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTwenty"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="3"
+            app:layout_column="1">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTwentyOne"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="3"
+            app:layout_column="2">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTwentyTwo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="3"
+            app:layout_column="3">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTwentyThree"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="3"
+            app:layout_column="4">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTwentyFour"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="3"
+            app:layout_column="5">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTwentyFive"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="4"
+            app:layout_column="0">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTwentySix"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="4"
+            app:layout_column="1">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTwentySeven"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="4"
+            app:layout_column="2">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTwentyEight"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="4"
+            app:layout_column="3">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonTwentyNine"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="4"
+            app:layout_column="4">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonThirty"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="4"
+            app:layout_column="5">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonThirtyOne"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="5"
+            app:layout_column="0">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonThirtyTwo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="5"
+            app:layout_column="1">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonThirtyThree"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="5"
+            app:layout_column="2">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonThirtyFour"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="5"
+            app:layout_column="3">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonThirtyFive"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="5"
+            app:layout_column="4">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonThirtySix"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onButtonClick"
+            app:layout_row="5"
+            app:layout_column="5">
+        </ImageButton>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="69dp"></Space>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Reset"
+        android:onClick="onResetPress"
+        android:textSize="20dp">
+    </Button>
+
+</LinearLayout>

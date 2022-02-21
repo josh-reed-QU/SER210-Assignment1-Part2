@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    //title text ***ADD FONT***
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Four in a Row"
+        android:textSize="52dp"
+        android:textColor="@color/purple_700" />
+        //TEXT FONT
+    //text to display game's instructions to the player
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="84dp" />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="The goal is to connect 4 pieces in a row. Click on an empty space to place a piece"
+        android:textSize="26dp" />
+
+    //input box for player's username
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="135dp" />
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="307dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:hint="Enter Username" />
+    //menu start button
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="29dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="onStart"
+        android:text="Start"
+        android:textSize="52dp" />
+
+</LinearLayout>
